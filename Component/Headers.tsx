@@ -5,7 +5,7 @@ function Headers() {
    
     <>
       <div className="navbar bg-transparent">
-        <nav className=" flex justify-between items-center p-4">
+        <nav className=" flex justify-between h-20 items-center p-4">
           <div className="flex items-center">
            
             <span className="ml-2 text-6xl font-bold" >GrowChip</span>
