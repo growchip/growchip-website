@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Iceland } from "next/font/google";
+import { Geist, Geist_Mono, Iceland, Gudea ,Inter } from "next/font/google";
 import "./globals.css";
 import Footers from "@/Component/Footers";
 import Headers from "@/Component/Headers";
@@ -13,7 +13,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-const iceland = Iceland({
+const inter = Inter({
+    subsets: ['latin'],
+  weight: '400',
+})
+
+const gudea = Gudea({
     subsets: ['latin'],
   weight: '400',
 })
@@ -31,11 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-      <body   className={iceland.className}
+      <body   className={inter.className}
       >
         <Headers/>
-        <main className="py-20">{children}</main>
-       
+        <main className="pt-40">{children}</main>
+
        <Footers/>
       </body>
     </html>

@@ -1,23 +1,23 @@
 import React from 'react'
 import mainImage from "@/public/image/mainImage.png"
-
+import Buttons from '@/Component/Buttons'
 
 function HeroSection() {
     return (
         <>
             <div
-                className="flex justify-start items-center mt-0 flex-col min-h-screen w-full"
+                className="flex justify-start max-h-screen items-center mt-0 flex-col min-h-screen w-full"
                 style={{
                     backgroundImage: `url(${mainImage.src})`,
                     backgroundSize: 'cover  ',
-                    backgroundPosition: 'top',
+                    backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                    
                 }}
             >
-                <h1 className='text-[8rem]'> Let there be Change</h1>
-                <p className='text-4xl m-[-10px]' style={{ fontWeight: "100" }}> We build an enviroment together</p>
-                <button className=' bg-amber'> Explore</button>
+                <h1 className='text-7xl pb-10'> Let there be Change</h1>
+                <p className='text-3xl m-[-10px]' style={{ fontWeight: "100" }}> We build an enviroment together</p>
+                <Buttons text={"Explore"}/>
             </div>
          
         </>
