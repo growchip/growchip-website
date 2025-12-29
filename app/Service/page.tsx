@@ -1,16 +1,18 @@
+import HeroSection from '@/Component/service/HeroSection'
+import OurStack from '@/Component/service/OurStack'
+import ServiceAccordingNavbar from '@/Component/service/services According/ServiceAccordingNavbar'
+import { Metadata } from 'next'
 import React from 'react'
-import OurServices from '@/Component/Service/OurServices'
-import HeroSection from '@/Component/Service/HeroSection'
 
-{/** this is the Services page  */}
+
 function page() {
   return (
-   <>
-    <HeroSection/>
-   
-    <OurServices/>
-
-    </>
+    <div><HeroSection/>
+    
+    <ServiceAccordingNavbar/>
+   <OurStack/>
+    
+    </div>
   )
 }
 

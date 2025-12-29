@@ -1,24 +1,20 @@
-import React from 'react'
+import Link from "next/link";
 
-type ButtonProps = {
+interface ArrowButtonProps {
   text: string;
+  link:string 
   onClick?: () => void;
-};
+  className?: string;
+}
 
-
-const Buttons: React.FC<ButtonProps> = ({ text, onClick }) => {
+const Button = ({ text,link, onClick, className = "" }: ArrowButtonProps) => {
   return (
-    <button
-      onClick={onClick}
-      className="
-        bg-gradient-to-r from-[#84DA2E] to-[#2596BE]
-        px-[30px] py-3 mt-10 rounded-2xl
-        hover:scale-105 transition-transform duration-300
-        text-3xl capitalize
-      "
-    >
-      {text}
-    </button>
+    <button className=' text-start bg-linear-to-r from-[#84DA2E] to-[#2596BE] px-10 py-3 mt-10
+                         rounded-2xl  hover:scale-105 transition-transform duration-300    capitalize' >
+                       
+                       <Link href={`${link}`}> {text} </Link>
+                         </button>
   );
 };
-export default Buttons
+
+export default Button;

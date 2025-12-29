@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "Component/About/StartData.jsx"  ],
+, "Component/about/StartData.jsx", "Component/service/Service.jsx", "Component/service/services According/DigitalMarketing.jsx", "lib/action.js", "lib/hygraph.js", "lib/action.js", "lib/hyraph.js"  ],
   "exclude": ["node_modules"]
 }

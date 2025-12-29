@@ -1,73 +1,138 @@
 "use client";
-import { Menu, X } from 'lucide-react';
-import { useState, useEffect } from 'react'
-import Image from 'next/image';
-import Link from 'next/link';
-import Logo from "@/public/logo/logo.jpg"
-import Buttons from './Buttons';
 
-function Headers() {
+import Image from "next/image";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import Buttons from "@/Component/Buttons";
 
+import Logo from "@/public/logo/logo.jpg";
+import { label } from "framer-motion/client";
+
+type NavItem = {
+  label:string;
+  href:string,
+}
+
+  const navItems:NavItem[]=[
+   { label: "Home", href: "/" },
+ 
+  { label: "About", href: "/about" },
+   { label: "Services", href: "/service" },
+  { label: "Blog", href: "/blog" },
+
+]
+
+
+export default function Navbar()  {
+
+
+
+  const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
-
+  const [active, setActive] = useState<boolean>(false)
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-
-
+const [activeIndex, setActiveIndex] = useState<number>(0);
   return (
-    <>
-      <header
-        className={`fixed top-0 left-0 w-full  z-50 transition-all duration-300
-        ${scrolled ? "bg-black shadow-md" : "bg-transparent"}
-      `}
+    <header
+      className={`fixed top-0 inset-x-0      z-50 transition-all duration-300 ${scrolled ? "bg-black shadow-md" : "bg-transparent"
+        }`}
+    >
+      {/* NAVBAR */}
+      <nav
+        className="
+        max-w-7xl
+          mx-auto
+          flex items-center justify-between
+          h-16 sm:h-18 lg:h-20
+          px-4 sm:px-6 lg:px-12
+        "
       >
-        <nav className=" mx-auto   flex items-center justify-around py-4">
+        {/* LOGO */}
+        <Image
+          src={Logo.src}
+          alt="Logo"
+          width={220}
+          height={120}
+          priority
+          className="
+            w-[130px]
+            sm:w-[160px]
+            lg:w-[200px]
+            h-auto
+            object-contain
+          "
+        />
 
+        {/* DESKTOP MENU */}
+        <ul
+          className="
+            hidden md:flex items-center
+            gap-6 lg:gap-10
+            text-base lg:text-lg
+            font-medium
+          "
+        >{navItems.map((item, index) => (
+          <li key={item.label}>
+            <Link
+              href={item.href}
+              onClick={() => setActiveIndex(index)}
+              className={`px-4 py-2 rounded-md transition-all duration-300
+                ${
+                  activeIndex === index
+                    ? "bg-white text-black"
+                    : "bg-black text-white hover:bg-neutral-800"
+                }
+              `}
+            >
+              {item.label}
+            </Link>
+          </li>
+        ))}   
+        </ul>
 
+        {/* DESKTOP BUTTON */}
+        <div className="hidden pb-10 md:block">
+          <Buttons text="Let's Contact" link="/contact" />
+        </div>
 
-          <Image src={Logo.src} alt="logo" width={300} height={250} className="max-w-xl" />
+        {/* MOBILE TOGGLE */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle Menu"
+        >
+          {menuOpen ? <X size={26} /> : <Menu size={26} />}
+        </button>
+      </nav>
 
+      {/* MOBILE MENU */}
+      <div
+        className={`
+          md:hidden
+          absolute top-full inset-x-0
+          bg-black text-white
+          transition-all duration-300 ease-in-out
+          overflow-hidden
+          ${menuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}
+        `}
+      >
+        <ul className="flex flex-col items-center gap-5 py-6 text-base sm:text-lg">
+          <Link onClick={() => setMenuOpen(false)} href="/">Home</Link>
+          
+          <Link onClick={() => setMenuOpen(false)} href="/about">About</Link>
+          <Link onClick={() => setMenuOpen(false)} href="/service">Services</Link>
+          <Link onClick={() => setMenuOpen(false)} href="/blog">Blog</Link>
 
-
-          <ul className="hidden md:flex items-center gap-8 font-medium  text-xl">
-            <Link href="/" className="hover:text-blue-500 ">Home</Link>
-            <Link href="/About" className="hover:text-blue-500 ">About</Link>
-            <Link href="/Service" className="hover:text-blue-500 ">Services</Link>
-            <Link href="/Contact" className="hover:text-blue-500 ">Contact</Link>
-          </ul>
-          <Link
-            href="/Contact"
-            className="hidden md:inline-block text-white rounded-full "
-          >
-             <Buttons text="Explore" />
-          </Link>
-        </nav>
-
-       
-      </header>
-
-    </>
-  )
+          <div className="pt-2 ">
+            <Buttons text="Let's Contact" link="/contact" />
+          </div>
+        </ul>
+      </div>
+    </header>
+  );
 }
-
-export default Headers
-
-
-
-
-
-
-
-
-
-
-
-//  

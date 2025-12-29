@@ -9,10 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@apollo/client": "^4.0.11",
     "@studio-freight/lenis": "^1.0.42",
+    "animate.css": "^4.1.1",
     "framer-motion": "^12.23.26",
+    "graffle": "^8.0.0-next.223",
+    "graphql": "^16.12.0",
     "lucide-react": "^0.562.0",
     "next": "^16.1.1-canary.1",
+    "nodemailer": "^7.0.12",
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "react-router-dom": "^7.11.0"
@@ -20,6 +25,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

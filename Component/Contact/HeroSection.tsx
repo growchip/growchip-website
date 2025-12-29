@@ -3,23 +3,69 @@ import Image from "next/image";
 import Contact from "@/public/image/Hero Section Image.png"
 import { url } from "inspector";
 import Link from "next/link";
+import Button  from "../Buttons";
+import From from "./From";
 
 function HeroSection() {
     return (
         <>
-            <section className=" flex justify-evenly items-center mt-28 ">
-                <section style={{
+         <section className="  max-w-7xl
+      mx-auto sm:pt-20 lg:mt-8 px-4 sm:px-8 lg:px-16">
+  <div
+    className="
+      max-w-screen-2xl sm:my-auto mx-auto
+      grid grid-cols-1 lg:grid-cols-2
+      gap-12 lg:gap-20
+      items-center
+    "
+  >
+    {/* LEFT CONTENT */}
+    <div className="text-center lg:text-left">
+      <h1
+        className="
+          text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl
+          mb-6
+          hover:scale-105
+          transition-transform duration-300
+        "
+      >
+        Contact Us Now
+      </h1>
 
-                }}>
-                    <h1 className=" text-5xl mb-10 hover:scale-105  hover:scale-105 transition-transform duration-300    "> Contact Us Now </h1>
-                    <p className=" overflow-hidden w-xl"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, explicabo iure. Excepturi quam nam tempore sapiente fugit sed iure perferendis dolor repudiandae, voluptates aperiam nisi ut, nihil quod, magnam officia saepe incidunt in. Libero porro cupiditate inventore quod dolore est praesentium delectus vel odio harum earum saepe, temporibus neque consequuntur tempore dolores consequatur omnis quos culpa similique. Accusantium, repellendus praesentium neque in aspernatur numquam quasi aperiam beatae quo placeat quam laboriosam, debitis consectetur dolores odio! Porro quidem natus ipsa quasi sapiente itaque quod dolorum distinctio, fugiat dignissimos voluptatibus, enim in hic molestias est reiciendis reprehenderit illum obcaecati, voluptate vero. Quidem? </p>
-                    <button className=' text-start bg-linear-to-r from-[#84DA2E] to-[#2596BE] px-30 py-3 mt-10
-                         rounded-2xl  hover:scale-105 transition-transform duration-300    text-3xl capitalize' >
-                         <Link href="/" className="hover:text-blue-500 "> Explore</Link>
-                         </button>
-                </section>
-                <section> <Image src={Contact.src} className="w-4xl" alt="Contact Iamge " width={500} height={500} /></section>
-            </section>
+      <p
+        className="
+          text-sm sm:text-base lg:text-lg
+          leading-relaxed
+          max-w-xl
+          mx-auto lg:mx-0
+          mb-6
+        "
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
+        explicabo iure. Excepturi quam nam tempore sapiente fugit sed iure
+        perferendis dolor repudiandae.
+      </p>
+
+      <Button text="Explore" link="#" />
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="flex justify-center lg:justify-end">
+      <Image
+        src={Contact.src}
+        alt="Contact Image"
+        width={500}
+        height={500}
+        className="
+          w-full
+          max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
+          h-auto
+          object-contain
+        "
+      />
+    </div>
+  </div>
+</section>
         </>
     );
 }
