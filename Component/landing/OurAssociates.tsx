@@ -4,7 +4,11 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import Bio from "@/public/logo/Bio.png"
 import Bio2 from '@/public/logo/Rechelist.png'
-import bio3 from '@/public/logo/Zoicilfe.png'
+import Bio3 from '@/public/logo/Zoicilfe.png'
+import Bio4 from '@/public/logo/windlas.png'
+import Bio5 from '@/public/logo/amazon.png'
+import Bio6 from '@/public/logo/BNYMellon.png'
+import Bio7 from '@/public/logo/vellmine.jpg'
 import Image from 'next/image';
 import { url } from 'inspector';
 
@@ -14,23 +18,19 @@ export const carouselData = [
     {
         id: 1,
         title: "New Tittle",
-        src: Bio.src,
+        src: Bio6.src,
     }, 
     {
         id: 2,
         title: "New Tittle",
-       src: Bio2.src,
+       src: Bio5.src,
     },
     {
         id: 3,
         title: "New Tittle",
-        src: bio3.src,
+        src: Bio4.src,
     },
-    {
-        id: 4,
-        title: "New Tittle",
-        src: Bio2.src,
-    },
+   
     {
         id: 5,
         title: "New Tittle",
@@ -39,24 +39,19 @@ export const carouselData = [
      {
         id: 6,
         title: "New Tittle",
-       src: Bio2.src,
+       src: Bio3.src,
     },
     {
         id: 7,
         title: "New Tittle",
-        src: bio3.src,
+       src: Bio2.src,
     },
-    {
+     {
         id: 8,
         title: "New Tittle",
-        src: Bio2.src,
+       src: Bio7.src,
     },
-    {
-        id: 9,
-        title: "New Tittle",
-        src: Bio.src,
-    }  
-    ,]
+    ]
 
 function PartnerLogocarousle() {
     const [active, setActive] = useState(2);
@@ -68,7 +63,7 @@ function PartnerLogocarousle() {
 
         const interval = setInterval(() => {
             setActive((prev) => (prev + 1) % total);
-        }, 1000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, [paused, total]);
@@ -86,10 +81,10 @@ function PartnerLogocarousle() {
       text-3xl sm:text-4xl md:text-5xl lg:text-6xl
       font-semibold
       text-white
-      mb-6 sm:mb-8 lg:mb-10
+       sm:mb-8 lg:mb-3 uppercase
     "
   >
-    OUR ASSOCIATES
+    Trusted By
   </h2>
 
   {/* Carousel Wrapper */}
@@ -97,7 +92,7 @@ function PartnerLogocarousle() {
     className="relative w-full  flex items-center justify-center">
     {/* Perspective container */}
     <div
-      className=" relative w-full max-w-xs  flex sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl h-[120px] sm:h-[160px] md:h-[190px] lg:h-[220px] items-center justify-center overflow-hidden perspective-[800px] sm:perspective-[1000px] lg:perspective-[1200px] mt-2 sm:mt-4 "
+      className=" relative w-full max-w-xs  flex sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl h-[120px] sm:h-[160px] md:h-[190px] lg:h-[320px] items-center justify-center overflow-hidden perspective-[800px] sm:perspective-[1000px] lg:perspective-[1200px] mt-2 sm:mt-4 "
     >
       {carouselData.map((card, index) => {
         const offset = index - active;

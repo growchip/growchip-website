@@ -13,6 +13,7 @@ function HeroSection() {
           style={{ backgroundBlendMode: "color" }}>
           {/* Heading */}
           <h1
+           
             className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight pb-4 sm:pb-6 md:pb-8 lg:pb-10">
             Solutions <br />
             that drive <span className="text-green-600 font-bold">Growth</span>

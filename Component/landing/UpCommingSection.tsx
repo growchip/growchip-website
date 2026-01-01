@@ -1,5 +1,11 @@
 import React, { useEffect ,useState  } from 'react'
-import laptopImage from "@/public/image/thirdSecitionImage.png"
+import Elite from "@/public/image/png/EliteWeb&Mobile.jpg" 
+import AI from "@/public/image/png/AI.jpg" 
+import Digital from "@/public/image/png/digital.jpg" 
+import Clound from "@/public/image/png/Cloud,.jpg" 
+import google from "@/public/image/png/google.jpg" 
+import IIT from "@/public/image/png/iit.webp" 
+import Image from 'next/image';
 
 
 const carouselData = [
@@ -8,41 +14,43 @@ const carouselData = [
            title: "Elite Web & Mobile Development",
            desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
            rating: 4.8,
-           image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+           src: Elite,
        },
        {
            id: 2,
            title: "AI-Powered Video & Content Solutions",
            desc: "Captivate audiences with AI-powered videos and digital content that drives engagement and conversions.",
            rating: 4.6,
-           image: "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
+           src: AI,
+           
        },
        {
            id: 3,
            title: "SEO, SMO & Digital Marketing ",
            desc: "Boost visibility, generate leads, and improve conversions with  SEO, SMO, and paid campaigns optimized for Chandigarh and beyond.",
            rating: 5.0,
-           image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+           src: Digital
        },
        {
            id: 4,
            title: "Google & Meta Ads Expertise",
            desc: "Run targeted Google Ads and Meta Ads campaigns that reach the right audience and deliver measurable results.",
            rating: 4.7,
-           image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+            src: google
+         
        },
        {
            id: 5,
            title: "Cloud, DevOps & Enterprise IT",
            desc: "Secure, resilient, and cloud-enabled infrastructure for businesses in Chandigarh, India, and global markets.",
            rating: 4.5,
-           image: "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
+           src: Clound
        }, {
            id: 6,
            title: "IITians & Big-4 Tech Expertise  ",
            desc: "Our IIT alumni and Big-4 tech veterans deliver unmatched technical expertise, ensuring every project meets global standards and drives growth.",
-           rating: 4.5,
-           image: "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
+            src: IIT
+           
        },
 ];
 
@@ -114,9 +122,11 @@ function UpCommingSection() {
             className=" w-[260px] sm:w-[300px] lg:w-[340px] h-[340px] sm:h-[380px] lg:h-[320px] rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-700 shadow-xl "
           >
             {/* Image */}
-            <img
-              src={card.image}
+            <Image
+              src={card.src}
               alt={card.title}
+              height={500}
+              width={900}
               className="h-32 sm:h-36 lg:h-40 w-full object-cover"
             />
 

@@ -1,59 +1,66 @@
 import React from 'react'
 import Image from 'next/image'
-import search from "@/public/image/png/search.png"
-import development from "@/public/image/png/devlopment.png"
-import customerservice from "@/public/image/png/customer-service.png"
-import trading from "@/public/image/png/trading.png"
+import search from "@/public/image/png/Pharmaceuticals .png"
+
+import Real from "@/public/image/png/Real.png"
+import Retail from "@/public/image/png/Retail & E-commerce.png"
+import customerservice from "@/public/image/png/customerservice.png"
+import Manufacturing from "@/public/image/png/Manufacturing.png"
+import Wedding from "@/public/image/png/Wedding.png"
+import Edu from "@/public/image/png/Edu.png"
+import travel from "@/public/image/png/travel.png"
+import Media from "@/public/image/png/Media.png"
+
 
 const cards = [
   {
     id: 1,
-    src: search.src,
+    src:search,
     title: "Pharmaceuticals ",
     desc: "Digital solutions for patient engagement, hospital management, and pharma operations.",
 
   },
   {
     id: 2,
-    src: development.src,
+    src: Real,
     title: "Real Estate ",
     desc: "CRM systems, website development, and property marketing solutions.",
 
   },
   {
     id: 3,
-    src: trading.src,
+    src: Retail,
     title: "Retail & E-commerce",
     desc: "Web development, SEO, SMO, and conversion-focused digital marketing.",
 
   },
   {
     id: 4,
-    src: customerservice.src,
+    src: Manufacturing,
     title: "Manufacturing & Supply Chain",
     desc: "ERP systems, cloud integration, and process optimization tools."
   },
   {
-    id: 4,
-    src: customerservice.src,
+    id: 5,
+    src: Wedding,
     title: "Wedding & Event Management",
     desc: "AI-powered promotions, event websites, and digital marketing campaigns."
   },
 {
-    id: 4,
-    src: customerservice.src,
+    id: 6,
+    src: Edu,
     title: "Education & EdTech",
     desc: "Learning platforms, SEO-optimized websites, and digital engagement tools."
   },
 {
-    id: 4,
-    src: customerservice.src,
+    id: 7,
+    src: travel,
     title: "Hospitality & Travel",
     desc: "Booking platforms, web solutions, and targeted marketing campaigns"
   },
   {
-    id: 4,
-    src: customerservice.src,
+    id: 8,
+    src: Media,
     title: "Media & Entertainment",
     desc: "AI-driven content creation, SEO, and video marketing solutions."
   },

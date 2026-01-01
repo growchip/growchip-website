@@ -6,7 +6,7 @@ import ThirdSection from "@/Component/landing/Productsthatdefine"
 import UpCommingSection from '@/Component/landing/UpCommingSection';
 import Testimoinal from '@/Component/landing/Testimoinal';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import OurProcess from '@/Component/landing/OurProcess';
+import OurProcess from '@/Component/landing/OurExpeties';
 import FAQsection from '@/Component/landing/FAQsection';
 import Aipowered from '@/Component/landing/Aipowered';
 import Automate from '@/Component/landing/Aiptowered2';

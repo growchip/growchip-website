@@ -42,7 +42,7 @@ const HoverImage: React.FC<HoverImageProps> = ({
 function Footers() {
   return (
     <>
-          <footer
+  <footer
   style={{ fontFamily: "Segoe UI, Arial, sans-serif" }}
   className=" bg-[#363738] text-white pt- sm:pt-28 lg:pt-10 overflow-x-hidden"
 >

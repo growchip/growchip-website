@@ -40,7 +40,6 @@ const services = [
   {
     id: "04",
     title: "Nextjs WebApplication",
-    slug: "business-consulting",
     shortDescription: "Expert consulting for smart decision-making.",
     description:
       "Our consulting services provide strategic insights to help businesses innovate, scale, and succeed.",

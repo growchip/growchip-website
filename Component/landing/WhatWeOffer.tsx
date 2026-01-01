@@ -1,31 +1,36 @@
 import React from "react";
-import Card1 from "@/public/image/card 1.png";
-import card2 from "@/public/image/card 2.png";
-import sideIamge from "@/public/image/sideImage.png";
-import { Key } from "lucide-react";
+import Image  from "next/image";
 import Buttons from "../Buttons";
+import DigitalMarketing from "@/public/image/png/Digital.png"
+import Software from "@/public/image/png/Enterprise.png"
+import Ai from "@/public/image/png/Ai.png"
+import customerservice from "@/public/image/png/customerservice.png"
 
 const cards = [
   {
     id: 1,
+    src:DigitalMarketing.src,
     title: "Digital Marketing & Digital Presence",
     desc: "Growchip digital marketing solutions focus on generating qualified leads, improving conversion rates, and accelerating business growth across global markets.",
     
   },
   {
     id: 2,
+     src:Software.src,
     title: "Enterprise Software Engineering",
     desc: "Secure, scalable, and high-performance applications built to meet global standards and complex business needs.",
     
   },
   {
     id: 3,
+    src:Ai.src,
     title: "Data, AI & Advanced Analytics",
     desc: "Unlock insights, accelerate decision-making, and drive innovation with data-driven and AI-powered solutions",
   
   },
   {
     id: 4,
+    src:customerservice.src,
     title: "Managed Services & 24/7 Support",
     desc: "Always-on monitoring, proactive management, and global support to keep your business running without disruption.hreat detection",
     
@@ -55,8 +60,8 @@ function WhatWeOffer() {
             key={index}
             className=" bg-[#191919] cursor-pointer hover:bg-gradient-to-r from-[#84DA2E] to-[#2596BE] rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 transition-transform duration-300 hover:scale-105 "
           >
-            <img src={Card1.src} alt="" className="mb-4 w-12 sm:w-14" />
-
+            <Image src={card.src} alt="" height={500} width={800}  className="mb-7  sm:w-14 mb:w-24 lg:w-34 " />
+  
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-extralight mb-4 sm:mb-6">
               {card.title}
             </h2>
