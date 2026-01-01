@@ -11,22 +11,10 @@ function hett() {
 >
   <div
     className="
-     
-      bg-gradient-to-r from-[#84DA2E] to-[#2596BE]
-      rounded-2xl sm:rounded-3xl xl:rounded-[32px]
-      py-8 sm:py-12 md:py-14 lg:py-20
-      px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20
-      text-center lg:text-left
-    "
-  >
+      bg-gradient-to-r from-[#84DA2E] to-[#2596BE] rounded-2xl sm:rounded-3xl xl:rounded-[32px] py-8 sm:py-12 md:py-14 lg:py-20 px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20 text-center lg:text-left">
     {/* Heading */}
     <h2
-      className="
-        text-xl sm:text-xs md:text-xl lg:text-2xl xl:text-6xl
-        font-semibold
-        pb-4 sm:pb-6
-        leading-tight
-      "
+      className=" text-xl sm:text-xs md:text-xl lg:text-2xl xl:text-6xl font-semibold pb-4 sm:pb-6 leading-tight "
     >
       Ready to Automate
       <br className="hidden sm:block" />
@@ -35,12 +23,7 @@ function hett() {
 
     {/* Content */}
     <p
-      className="
-        text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl
-        max-w-md sm:max-w-2xl lg:max-w-3xl
-        leading-relaxed
-        mx-auto lg:mx-0
-      "
+      className=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-md sm:max-w-2xl lg:max-w-3xl leading-relaxed mx-auto lg:mx-0 "
     >
       <span className="font-medium block mb-2">
         AI Powered Voice Speech

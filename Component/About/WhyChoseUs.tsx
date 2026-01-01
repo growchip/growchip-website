@@ -19,28 +19,28 @@
     const items = [
       {
         icon: <ShieldCheck className="w-8 h-8 text-[#84DA2E]" />,
-        title: "ISO 9001:2008 Certified",
-        desc: "Zoic Life Sciences is an ISO certified Pharma company, committed to high quality products. We have also earned the right amount of trust, respect in the market.",
+        title: "IITian-Led Team ",
+        desc: "Elite Technical Expertise Chandigarh & India",
       },
       {
         icon: <Cog className="w-8 h-8 text-[#84DA2E]" />,
-        title: "Our Quality Approach",
-        desc: "We are committed to follow the quality norms for manufacturing products. We formulate all our offered medicines as per the set quality norms.",
+        title: "Big-4 Tech Experience ",
+        desc: "Proven Enterprise Solutions & Best Practices",
       },
       {
         icon: <Users className="w-8 h-8 text-[#84DA2E]" />,
-        title: "Dedicated Workforce",
-        desc: "Our team members are quite diverse to create a comprehensive, high-performance culture in our company, which will affect our business outcome.",
+        title: "Global Delivery ",
+        desc: "Serving Clients in India, US, Europe & Beyond",
       },
       {
         icon: <Package className="w-8 h-8 text-[#84DA2E]" />,
-        title: "Packaging",
-        desc: "We make use of proven techniques for packaging all medicines. Using advanced methods, we ensure leakage & breakage-proof delivery.",
+        title: "Outcome-Focused ",
+        desc: "ROI-Driven IT & Marketing Strategies",
       },
       {
         icon: <Scale className="w-8 h-8 text-[#84DA2E]" />,
-        title: "Ethics and Compliance",
-        desc: "Our policies and procedures ensure our company and partners conduct business in a legal, ethical, and responsible manner.",
+        title: "24/7 Support ",
+        desc: "Always-On Monitoring & Managed Services  ",
       },
     ];
     
@@ -64,12 +64,35 @@
         tracking-wider
         text-3xl sm:text-4xl md:text-5xl lg:text-6xl
         text-white
-        mb-12 sm:mb-16
+        mb-5 sm:mb-5
+        text-center 
+        font-bold
+      ">
+       Why Choose Us
+      </h2>
+      <h2 className="
+        regulator-nova-alts-straight
+        tracking-wider
+        text-3xl sm:text-4xl md:text-5xl lg:text-3xl
+        text-white
+       
         text-center 
         font-bold
       ">
         Why Grow Chip Delivers Measurable Digital Marketing Results
       </h2>
+      <p
+       className="
+        regulator-nova-alts-straight
+        tracking-wider
+        text-xl sm:text-lg md:text-xl lg:text-xl
+        text-white
+        mb-12 sm:mb-16
+        text-center 
+       
+      ">
+       Flaunt differentiators like IITians, Big-4 experience, global client delivery.
+      </p>
 
       <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-20">
         

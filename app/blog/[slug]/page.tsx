@@ -1,52 +1,80 @@
 import Image from "next/image";
 import { apolloClient } from "@/lib/apolloClient";
 import { BLOG_BY_SLUG } from "@/lib/queries";
+import RelatedBlogs from "@/Component/blog/RelatedBlogs";
+import BasicFrom from "@/Component/contact/BasicFrom";
 
-export const revalidate = 60;
+import { RichText } from "@graphcms/rich-text-react-renderer";
 
-interface PageProps {
-  params: { slug: string };
-}
+export default async function BlogDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  
+  const { slug } = await params;
 
-export default async function BlogDetailPage({ params }: PageProps) {
+  if (!slug) {
+    throw new Error("Slug missing");
+  }
+
+  
   const { data } = await apolloClient.query({
     query: BLOG_BY_SLUG,
-    variables: { slug: params.slug },
+    variables: { slug },
   });
 
   const blog = data?.blog;
 
   if (!blog) {
-    return <p className="text-center py-20">Blog not found</p>;
+    throw new Error("Blog not found");
   }
 
+  const categorySlug = blog.categories?.[0]?.slug;
+
   return (
-    <article className="max-w-4xl  mx-auto px-6 py-10">
-      <h1 className="text-3xl font-bold mb-4">
-        {blog.title}
-      </h1>
+    <section className="max-w-7xl mx-auto px-6 py-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-      <p className="text-gray-500 mb-6">
-        By {blog.author?.name} •{" "}
-        {new Date(blog.publishedAt).toDateString()}
-      </p>
+        {/* MAIN BLOG */}
+        <article className="lg:col-span-2">
+          <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
 
-      {blog.featuredImage?.url && (
-        <Image
-          src={blog.featuredImage.url}
-          alt={blog.title}
-          width={800}
-          height={400}
-          className="w-full rounded-lg mb-8"
-        />
-      )}
+          <p className="text-gray-500 mb-6">
+            By {blog.author?.name} •{" "}
+            {new Date(blog.publishedAt).toDateString()}
+          </p>
 
-      <div
-        className="prose max-w-none"
-        dangerouslySetInnerHTML={{
-          __html: blog.content.html,
-        }}
-      />
-    </article>
+          {blog.featuredImage?.url && (
+            <Image
+              src={blog.featuredImage.url}
+              alt={blog.title}
+              width={800}
+              height={400}
+              className="w-full rounded-lg mb-8"
+              priority
+            />
+          )}
+
+          {/* ✅ SAFE RICH TEXT RENDERING */}
+          <div className="prose max-w-none">
+            <RichText content={blog.content.raw} />
+          </div>
+        </article>
+
+        {/* SIDEBAR */}
+        <aside className="space-y-8">
+          <div className="p-4 rounded-3xl shadow-inner">
+            <BasicFrom />
+          </div>
+
+          <RelatedBlogs
+            currentSlug={blog.slug}
+            categorySlug={categorySlug}
+          />
+        </aside>
+
+      </div>
+    </section>
   );
 }

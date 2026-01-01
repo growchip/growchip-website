@@ -7,50 +7,52 @@ import {
   Users,
   Laptop,
 } from "lucide-react";
-import ServiceRow from "../Service";
+import ServiceRow from "../ServiceRow";
+
+
 function Webdevelopment() {
     const services = [
         {
           id: "01",
-          title: "SMO",
+          title: "Customize ERP And CRM System Development",
           description:
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+            "Automate, manage, and scale your business efficiently. Custom ERP & CRM development with complete digital marketing solutions.",
           icon: ClipboardList,
           color: "bg-red-700",
           side: "left",
         },
         {
           id: "02",
-          title: "Email Marketing Services",
+          title: "Custom Software / App Development ",
           description:
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-          icon: Settings,
+            "Turn your ideas into powerful digital products. Custom software and app development built to scale.",
+          icon: Settings, 
           color: "bg-orange-500",
           side: "right",
         },
         {
           id: "03",
-          title: "Web Hosting Services",
+          title: " Pos  Software Development ",
           description:
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+            "Simplify billing, inventory, and reporting in one system. Custom POS software designed for speed and accuracy. ",
           icon: MousePointerClick,
           color: "bg-teal-400",
           side: "left",
         },
         {
           id: "04",
-          title: "Web development Consulating ",
+          title: "Customizing Software Development",
           description:
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+            "Software built around your business, not the other way around. Fully customized solutions for smarter operations. ",
           icon: Users,
           color: "bg-sky-500",
           side: "right",
         },
         {
           id: "05",
-          title: "Devices",
+          title: " Cousomizing hopitality Software  ",
           description:
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+            "Smart software solutions tailored for hotels and hospitality businesses. Manage reservations, billing, and guest services with ease.",
           icon: Laptop,
           color: "bg-blue-700",
           side: "left",

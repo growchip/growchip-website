@@ -1,7 +1,3 @@
 export default function Loading() {
-  return (
-    <p className="text-center py-20 text-gray-500">
-      Loading blogs...
-    </p>
-  );
+  return <p className="text-center py-20 text-white">Loading blogs...</p>;
 }

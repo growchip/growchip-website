@@ -94,22 +94,10 @@ function PartnerLogocarousle() {
 
   {/* Carousel Wrapper */}
   <div
-    className="relative w-full flex items-center justify-center"
-    onMouseEnter={() => setPaused(true)}
-    onMouseLeave={() => setPaused(false)}
-  >
+    className="relative w-full  flex items-center justify-center">
     {/* Perspective container */}
     <div
-      className="
-        relative
-        w-full
-        max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl
-        h-[140px] sm:h-[160px] md:h-[190px] lg:h-[220px]
-        flex items-center justify-center
-        overflow-hidden
-        perspective-[800px] sm:perspective-[1000px] lg:perspective-[1200px]
-        mt-2 sm:mt-4
-      "
+      className=" relative w-full max-w-xs  flex sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl h-[120px] sm:h-[160px] md:h-[190px] lg:h-[220px] items-center justify-center overflow-hidden perspective-[800px] sm:perspective-[1000px] lg:perspective-[1200px] mt-2 sm:mt-4 "
     >
       {carouselData.map((card, index) => {
         const offset = index - active;
@@ -125,7 +113,7 @@ function PartnerLogocarousle() {
                 translateZ(${isActive ? 120 : -220}px)
                 rotateY(${offset * -22}deg)
                 scale(${isActive ? 1.1 : 0.9})
-              `,
+                `,
               opacity: Math.abs(offset) > 2 ? 0 : 1,
               zIndex: 10 - Math.abs(offset),
             }}

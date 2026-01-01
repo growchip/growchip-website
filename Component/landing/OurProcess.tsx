@@ -9,32 +9,55 @@ const cards = [
   {
     id: 1,
     src: search.src,
-    title: "Discover &  Analysis",
-    desc: "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+    title: "Pharmaceuticals ",
+    desc: "Digital solutions for patient engagement, hospital management, and pharma operations.",
 
   },
   {
     id: 2,
     src: development.src,
-    title: "Development & integration",
-    desc: "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+    title: "Real Estate ",
+    desc: "CRM systems, website development, and property marketing solutions.",
 
   },
   {
     id: 3,
     src: trading.src,
-    title: "Tesing & Quality Assyrance ",
-    desc: "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+    title: "Retail & E-commerce",
+    desc: "Web development, SEO, SMO, and conversion-focused digital marketing.",
 
   },
   {
     id: 4,
     src: customerservice.src,
-    title: "Deploment & Support ",
-    desc: "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-
-
+    title: "Manufacturing & Supply Chain",
+    desc: "ERP systems, cloud integration, and process optimization tools."
   },
+  {
+    id: 4,
+    src: customerservice.src,
+    title: "Wedding & Event Management",
+    desc: "AI-powered promotions, event websites, and digital marketing campaigns."
+  },
+{
+    id: 4,
+    src: customerservice.src,
+    title: "Education & EdTech",
+    desc: "Learning platforms, SEO-optimized websites, and digital engagement tools."
+  },
+{
+    id: 4,
+    src: customerservice.src,
+    title: "Hospitality & Travel",
+    desc: "Booking platforms, web solutions, and targeted marketing campaigns"
+  },
+  {
+    id: 4,
+    src: customerservice.src,
+    title: "Media & Entertainment",
+    desc: "AI-driven content creation, SEO, and video marketing solutions."
+  },
+
 ]
 function OurProcess() {
   return (
@@ -43,57 +66,32 @@ function OurProcess() {
 
         {/* Badge */}
         <span
-          className="
-      border border-white rounded-3xl
-      px-4 py-2 mb-6
-      text-sm sm:text-base
-      hover:bg-white/80 hover:text-black
-      transition-all duration-300
-      hover:scale-105
-    "
+          className=" border border-white rounded-3xl px-4 py-2 mb-6 text-sm sm:text-base hover:bg-white/80 hover:text-black transition-all duration-300 hover:scale-105 "
         >
-          Our Process
+          Our Expertise
         </span>
 
         {/* Heading */}
         <div className="text-center max-w-3xl mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl flex flex-col lg:text-5xl font-semibold mb-4">
+          <h2 className="inline text-2xl sm:text-3xl md:text-4xl flex flex-col lg:text-5xl font-semibold mb-4">
             
-  
-<span className="px-4  text-white"> Our Step-by-Step Method </span>
-  <span className="px-4 pt-3 text-white">for Successful Service Delivery </span>
+  Industries We   
+<span className="text-green-600"> Serve</span>
+
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-300">
-            We follow a clear, structured approach to ensure every project runs smoothly.
+          Delivering tailored IT and digital solutions across sectors to drive growth, efficiency, and innovation.
           </p>
         </div>
 
         {/* Cards */}
         <div
-          className="
-      grid
-      grid-cols-1
-      sm:grid-cols-2
-      lg:grid-cols-3
-      xl:grid-cols-4
-      gap-6 sm:gap-8
-      max-w-7xl
-      w-full
-    "
+          className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 max-w-7xl w-full "
         >
           {cards.map((card, index) => (
             <div
               key={index}
-              className="
-          bg-[#191919]
-          rounded-xl
-          shadow-lg
-          p-6 sm:p-8
-          cursor-pointer
-          transition-all duration-300
-          hover:scale-105
-          hover:bg-gradient-to-r from-[#84DA2E] to-[#2596BE]
-        "
+              className=" bg-[#191919] rounded-xl shadow-lg p-6 sm:p-8 cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r from-[#84DA2E] to-[#2596BE] "
             >
               <Image
                 src={card.src}

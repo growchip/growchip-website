@@ -24,11 +24,13 @@ export const BLOGS_QUERY = gql`
 `;
 
 export const BLOG_BY_SLUG = gql`
-  query BlogBySlug {
-  blog(where: {slug: "web-designing-services-in-chandigarh"}) {
+  query BlogBySlug($slug: String!) {
+  blog(where: { slug: $slug }) {
+    id
+    slug
     title
     content {
-      html
+      raw
     }
     publishedAt
     seo {
@@ -36,13 +38,21 @@ export const BLOG_BY_SLUG = gql`
       metaDescription
     }
     featuredImage {
-      url(transformation: {image: {resize: {width: 1366, height: 786}}, document: {}})
+      url(
+        transformation: {
+          image: { resize: { width: 1366, height: 786 } }
+        }
+      )
     }
     author {
       name
       avatar {
-        url(transformation: {image: {resize: {width: 400}}})
+        url(transformation: { image: { resize: { width: 400  } } })
       }
+    }
+    categories {
+      slug
+      name
     }
   }
 }
@@ -77,6 +87,27 @@ export const CATEGORIES_QUERY = gql`
       id
       name
       slug
+    }
+  }
+`;
+
+/* Recent Blogs */
+export const RELATED_BLOGS_QUERY = gql`
+  query RelatedBlogs($slug: String!, $categorySlug: String!) {
+    blogs(
+      where: {
+        slug_not: $slug
+        categories_some: { slug: $categorySlug }
+      }
+      orderBy: publishedAt_DESC
+      first: 4
+    ) {
+      id
+      title
+      slug
+      featuredImage {
+        url
+      }
     }
   }
 `;

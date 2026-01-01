@@ -1,5 +1,5 @@
 "use client";
- import ServiceRow from "../Service";
+import ServiceRow from "../ServiceRow";
 import {
   ClipboardList,
   Settings,
@@ -11,49 +11,59 @@ export default function DigitalMarketing() {
   const services = [
     {
       id: "01",
-      title: "Optimization",
+      title: "Search Engine Optimization (SEO)",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+        "Professional web and digital solutions built for speed, security, and scalability. Enhance your online presence with modern, SEO-optimized technology.",
       icon: ClipboardList,
       color: "bg-red-700",
       side: "left",
     },
     {
       id: "02",
-      title: "Operations",
+      title: "Social Media Optimization(SMO) ",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+        "Modern web solutions designed for performance, reach, and conversions. Optimized for search engines and social media platforms.",
       icon: Settings,
       color: "bg-orange-500",
       side: "right",
     },
     {
       id: "03",
-      title: "Online",
+      title: "Google Ads",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+        "Grow your business with smart digital solutions that deliver results. SEO, SMO & Google Ads strategies designed to boost traffic and conversions.",
       icon: MousePointerClick,
       color: "bg-teal-400",
       side: "left",
     },
     {
       id: "04",
-      title: "Consulting",
+      title: "Meta Ads",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+        "Reach the right audience and convert them into customers. Performance-driven SEO, social media, Google Ads & Meta Ads..",
+      icon: Laptop,
+      color: "bg-blue-700",
+      side: "left",
+    },
+    {
+      id: "05",
+      title: "Whatsapp Marketing",
+      description:
+        "Generate high-quality leads and close more sales faster. SEO, social media, paid ads & WhatsApp Marketing in one strategy.",
       icon: Users,
       color: "bg-sky-500",
       side: "right",
     },
     {
-      id: "05",
-      title: "Devices",
+      id: "06",
+      title: "Email Marketing ",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
+        "Attract, engage, and retain customers across every channel. SEO, paid ads, WhatsApp & Email Marketing for maximum ROI.",
       icon: Laptop,
       color: "bg-blue-700",
       side: "left",
-    },
+    }
+       
   ];
 
   return (
@@ -68,4 +78,3 @@ export default function DigitalMarketing() {
     </section>
   );
 }
-

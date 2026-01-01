@@ -1,5 +1,5 @@
 "use client";
-
+import ServiceRow from "../ServiceRow";
 import {
   ClipboardList,
   Settings,
@@ -7,13 +7,11 @@ import {
   Users,
   Laptop,
 } from "lucide-react";
-import ServiceRow from "./ServiceRow";
-
-export default function OurServices() {
+export default function DigitalMarketing() {
   const services = [
     {
       id: "01",
-      title: "Optimization",
+      title: "SEO",
       description:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
       icon: ClipboardList,
@@ -59,7 +57,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="w-full  py-20 overflow-hidden">
+    <section className="w-full py-20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
         <div className="relative flex flex-col items-center gap-20">
           {services.map((service) => (

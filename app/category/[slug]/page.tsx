@@ -16,7 +16,7 @@ export default async function CategoryPage({ params }: PageProps) {
 
   if (!blogs.length) {
     return (
-      <p className="text-center py-20 text-gray-500">
+      <p className="text-center py-20 text-white">
         No blogs found in this category.
       </p>
     );
@@ -30,11 +30,11 @@ export default async function CategoryPage({ params }: PageProps) {
       </h1>
 
       {/* Blog Cards */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid sm:grid-cols-2  lg:grid-cols-3 gap-10">
         {blogs.map((blog) => (
           <article
             key={blog.id}
-            className="group rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition"
+            className="group rounded-2xl border border-gray-200 hover:scale-105 transition-transform duration-300 overflow-hidden hover:shadow-xl transition"
           >
             {/* Featured Image */}
             {blog.featuredImage?.url && (
@@ -57,7 +57,7 @@ export default async function CategoryPage({ params }: PageProps) {
                   <Link
                     key={cat.slug}
                     href={`/category/${cat.slug}`}
-                    className="text-xs bg-gray-100 px-3 py-1 rounded-full hover:bg-gray-200"
+                    className="text-xs px-3 py-1  outline-1 rounded-full hover:bg-gray-200 hover:text-black"
                   >
                     {cat.name}
                   </Link>
@@ -66,15 +66,11 @@ export default async function CategoryPage({ params }: PageProps) {
 
               {/* Title */}
               <h2 className="text-xl font-semibold mb-2 line-clamp-2">
-                <Link href={`/blog/${blog.slug}`}>
-                  {blog.title}
-                </Link>
+                <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
               </h2>
 
               {/* Excerpt */}
-              <p className="text-gray-600 line-clamp-3">
-                {blog.excerpt}
-              </p>
+              <p className="text-gray-600 line-clamp-3">{blog.excerpt}</p>
 
               {/* Footer */}
               <div className="mt-6 flex items-center justify-between">

@@ -12,37 +12,37 @@ import {
 const values = [
   {
     id: 1,
-    title: "Entrepreneurial Mindset",
+    title: " Our Mission",
     description:
-      "Encourages initiative, agility, optimism, proactive problem-solving, and ownership.",
+      "Deliver enterprise-grade IT solutions and digital innovations that drive measurable growth for businesses in Chandigarh, India, and globally.",
     color: "#b91c1c",
     icon: Brain,
   },
   {
     id: 2,
-    title: "Quality",
-    description: "Delivering excellence with consistency and precision.",
+    title: "Vision",
+    description: "To be a world-class, IITian-led IT and product company, redefining industry standards and creating products that transform businesses worldwide.",
     color: "#84cc16",
     icon: CheckCircle,
   },
   {
     id: 3,
-    title: "Innovation",
-    description: "Driving creativity and modern digital solutions.",
+    title: "Values",
+    description: "Innovation, Integrity, Excellence, and Client-Centricity guide every project we undertake, ensuring quality and trust at every step.",
     color: "#06b6d4",
     icon: Lightbulb,
   },
   {
     id: 4,
-    title: "Teamwork",
-    description: "Collaboration and shared success.",
+    title: "Quality",
+    description: "Every solution, whether digital marketing campaigns or enterprise-grade products, is engineered for perfection, scalability, and measurable impact.",
     color: "#6b7280",
     icon: Users,
   },
   {
     id: 5,
-    title: "Integrity",
-    description: "Honesty, transparency, and ethics.",
+    title: "Growth",
+    description: "We are obsessed with helping our clients grow—through cutting-edge technology, innovative products, and high-performing digital solutions.",
     color: "#f97316",
     icon: ShieldCheck,
   },
@@ -61,7 +61,7 @@ export default function CoreValues() {
         {/* LEFT CONTENT */}
         <div className="w-full">
           <h1 className="text-3xl sm:text-4xl font-bold text-red-700 mb-6">
-            OUR CORE <br /> VALUES
+            Our Fundamentals
           </h1>
 
           <div
