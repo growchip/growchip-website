@@ -12,88 +12,91 @@ import {
 const values = [
   {
     id: 1,
-    title: "Entrepreneurial Mindset",
+    title: " Our Mission",
     description:
-      "Encourages initiative, agility, optimism, proactive problem-solving, and ownership.",
+      "Deliver enterprise-grade IT solutions and digital innovations that drive measurable growth for businesses in Chandigarh, India, and globally.",
     color: "#b91c1c",
     icon: Brain,
   },
   {
     id: 2,
-    title: "Quality",
-    description:
-      "Delivering excellence with consistency and precision.",
+    title: "Vision",
+    description: "To be a world-class, IITian-led IT and product company, redefining industry standards and creating products that transform businesses worldwide.",
     color: "#84cc16",
     icon: CheckCircle,
   },
   {
     id: 3,
-    title: "Innovation",
-    description:
-      "Driving creativity and modern digital solutions.",
+    title: "Values",
+    description: "Innovation, Integrity, Excellence, and Client-Centricity guide every project we undertake, ensuring quality and trust at every step.",
     color: "#06b6d4",
     icon: Lightbulb,
   },
   {
     id: 4,
-    title: "Teamwork",
-    description:
-      "Collaboration and shared success.",
+    title: "Quality",
+    description: "Every solution, whether digital marketing campaigns or enterprise-grade products, is engineered for perfection, scalability, and measurable impact.",
     color: "#6b7280",
     icon: Users,
   },
   {
     id: 5,
-    title: "Integrity",
-    description:
-      "Honesty, transparency, and ethics.",
+    title: "Growth",
+    description: "We are obsessed with helping our clients grow—through cutting-edge technology, innovative products, and high-performing digital solutions.",
     color: "#f97316",
     icon: ShieldCheck,
   },
 ];
 
 export default function CoreValues() {
-
   const ICON_BG_SIZE = 64;
   const ICON_RADIUS = ICON_BG_SIZE / 2;
   const [active, setActive] = useState(values[0]);
 
   return (
-    <section className="   py-10 px-6  h-8xl">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+    <section className="py-10 px-4  max-w-7xl
+      mx-auto sm:px-6 lg:px-10 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
         {/* LEFT CONTENT */}
-        <div>
-          <h2 className="text-4xl font-bold text-red-700 mb-6">
-            OUR CORE <br /> VALUES
-          </h2>
+        <div className="w-full">
+          <h1 className="text-3xl sm:text-4xl font-bold text-red-700 mb-6">
+            Our Fundamentals
+          </h1>
 
           <div
-            className="rounded-2xl p-8 text-white transition-all duration-500"
+            className="rounded-2xl p-6 sm:p-8 text-white transition-all duration-500"
             style={{ backgroundColor: active.color }}
           >
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-lg sm:text-xl font-semibold mb-2">
               {active.title}
             </h3>
             <div className="w-12 h-1 bg-white mb-4"></div>
-            <p className="text-sm leading-relaxed opacity-90">
+            <p className="text-sm sm:text-base leading-relaxed opacity-90">
               {active.description}
             </p>
           </div>
         </div>
 
         {/* RIGHT SVG */}
-        <div className="flex justify-center ">
-          <svg viewBox="0 0 400 400" className="w-[720px] h-[720px] ">
-
+        <div className="flex justify-center w-full">
+          <svg
+            viewBox="0 0 400 400"
+            className="
+              w-[280px] h-[280px]
+              sm:w-[360px] sm:h-[360px]
+              md:w-[460px] md:h-[460px]
+              lg:w-[560px] lg:h-[560px]
+              xl:w-[720px] xl:h-[720px]
+            "
+          >
             {/* ROTATING WHEEL */}
             <g
               style={{
                 transformBox: "fill-box",
                 transformOrigin: "center",
-                transition: "transform 1s   ease-in-out",
+                transition: "transform 1s ease-in-out",
               }}
-              className=""
             >
               {/* SEGMENTS */}
               {values.map((item, index) => {
@@ -102,20 +105,31 @@ export default function CoreValues() {
                 return (
                   <path
                     key={item.id}
-                    d={getArcPath(200, 200, 170, 80, index * 72, (index + 1) * 72)}
+                    d={getArcPath(
+                      200,
+                      200,
+                      170,
+                      80,
+                      index * 72,
+                      (index + 1) * 72
+                    )}
                     fill={item.color}
                     onMouseEnter={() => setActive(item)}
+                    onClick={() => setActive(item)}
                     style={{
                       transformBox: "fill-box",
                       transformOrigin: "center",
                       transition: "transform 0.4s ease, opacity 0.4s ease",
-                      transform: isActive ? "translateY(-6px)" : "translateY(0)",
-                      opacity: isActive ? 10 : 0.9,
+                      transform: isActive
+                        ? "translateY(-6px)"
+                        : "translateY(0)",
+                      opacity: isActive ? 1 : 0.9,
                     }}
                     className="cursor-pointer"
                   />
                 );
               })}
+
               {/* ICONS */}
               {values.map((item, index) => {
                 const Icon = item.icon;
@@ -131,14 +145,15 @@ export default function CoreValues() {
                     width={ICON_BG_SIZE}
                     height={ICON_BG_SIZE}
                     onMouseEnter={() => setActive(item)}
+                    onClick={() => setActive(item)}
                     className="overflow-visible"
                   >
                     <div
                       className={`
-          flex items-center justify-center rounded-full
-          transition-all duration-300 ease-out over
-          ${isActive ? "scale-120 shadow-[0_0_20px_rgba(0,0,0,0.25)]" : ""}
-        `}
+                        flex items-center justify-center rounded-full
+                        transition-all duration-300
+                        ${isActive ? "scale-110 shadow-lg" : ""}
+                      `}
                       style={{
                         width: ICON_BG_SIZE,
                         height: ICON_BG_SIZE,
@@ -178,7 +193,7 @@ export default function CoreValues() {
 
 /* ---------------- HELPERS ---------------- */
 
-function polarToCartesian(cx, cy, r, angle) {
+function polarToCartesian(cx: number, cy: number, r: number, angle: number) {
   const rad = (angle - 90) * (Math.PI / 180);
   return {
     x: cx + r * Math.cos(rad),
@@ -186,7 +201,14 @@ function polarToCartesian(cx, cy, r, angle) {
   };
 }
 
-function getArcPath(cx, cy, outerR, innerR, startAngle, endAngle) {
+function getArcPath(
+  cx: number,
+  cy: number,
+  outerR: number,
+  innerR: number,
+  startAngle: number,
+  endAngle: number
+) {
   const p1 = polarToCartesian(cx, cy, outerR, startAngle);
   const p2 = polarToCartesian(cx, cy, outerR, endAngle);
   const p3 = polarToCartesian(cx, cy, innerR, endAngle);

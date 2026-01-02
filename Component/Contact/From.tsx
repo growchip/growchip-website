@@ -1,74 +1,29 @@
- "use client";
+"use client";
 
-import React, { ChangeEvent, FormEvent, useState } from 'react'
-import FromImage from "@/public/image/From Image.png"
-import Image from 'next/image'
-import { form } from 'framer-motion/client'
+import { useState } from "react";
+import Image from "next/image";
+import BasicFrom from "./BasicFrom";
+
+export default function ContactPage() {
 
 
-
-
-function From() {
   return (
-    <>
- <section className=' flex justify-around mt-20 items-center'>
-   
-    <section>
-         
-            <Image src={FromImage.src} alt='from Image' width={500} height={500} className=' w-4xl '/>
-    </section>
-     <section>
-         <form
-   
-      className="max-w-xl bg-black text-white p-8 rounded-2xl space-y-6"
-    >
-      <h2 className="text-3xl font-bold">Contact Us</h2>
-
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+       <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-20">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <Image
+            src="https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329543/Contact_2_i6vyto.png"
+            alt="Contact Image"
+            width={900}
+            height={900}
+            className=" w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto object-contain "
+            priority
+          />
+        </div>
+        <BasicFrom/>
       
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-        className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500"
-      />
-
-   
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-        className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500"
-      />
-
-      {/* MESSAGE */}
-      <textarea
-        name="message"
-        placeholder="Your Message"
-        rows={4}
-        required
-        className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500"
-      />
-
-      {/* BUTTON */}
-      <button
-        type="submit"
-        className="w-full bg-gradient-to-r from-[#84DA2E] to-[#2596BE]
-                   py-3 rounded-xl text-lg font-semibold
-                   hover:scale-105 transition-transform duration-300
-                   disabled:opacity-50"
-      >
-    Submit
-      </button>
-    </form>
-  
+        {/* RIGHT: IMAGE */}
+      </div>
     </section>
- </section>
-        </>
-  )
+  );
 }
-
-export default From
-
-
