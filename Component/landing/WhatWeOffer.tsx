@@ -9,28 +9,28 @@ import customerservice from "@/public/image/png/customerservice.png"
 const cards = [
   {
     id: 1,
-    src:DigitalMarketing.src,
+    src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329347/Digital_d4m0qk.png",
     title: "Digital Marketing & Digital Presence",
     desc: "Growchip digital marketing solutions focus on generating qualified leads, improving conversion rates, and accelerating business growth across global markets.",
     
   },
   {
     id: 2,
-     src:Software.src,
+     src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329348/Enterprise_uqi96p.png",
     title: "Enterprise Software Engineering",
     desc: "Secure, scalable, and high-performance applications built to meet global standards and complex business needs.",
     
   },
   {
     id: 3,
-    src:Ai.src,
+    src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329346/Ai_gsecxv.png",
     title: "Data, AI & Advanced Analytics",
     desc: "Unlock insights, accelerate decision-making, and drive innovation with data-driven and AI-powered solutions",
   
   },
   {
     id: 4,
-    src:customerservice.src,
+    src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329347/customerservice_xdv7l1.png",
     title: "Managed Services & 24/7 Support",
     desc: "Always-on monitoring, proactive management, and global support to keep your business running without disruption.hreat detection",
     

@@ -1,5 +1,5 @@
 import React from 'react'
-import laptopImage from "@/public/image/ther.jpg"
+import laptopImage from "@/public/image/ther.png"
 import Image from 'next/image'
 import Buttons from '../Buttons'
 

@@ -36,7 +36,7 @@ function HeroSection() {
           {/* RIGHT IMAGE */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src={Contact.src}
+              src="https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329544/Hero_Section_Image_hp39dv.png"
               alt="Contact Image"
               width={500}
               height={500}

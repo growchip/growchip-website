@@ -13,8 +13,8 @@ const services = [
     id: "01",
     title: "Wordpress Website Development",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-    icon: ClipboardList,
+      "We build fast, secure, and fully customized WordPress websites that are easy to manage and designed to grow your business.",
+    src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767343372/wordpress_kpltur.png",
     color: "bg-red-700",
     side: "left",
   },
@@ -22,8 +22,8 @@ const services = [
     id: "02",
     title: "Shopify Website Development",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-    icon: Settings,
+      "We offer expert Shopify website development services to build secure, scalable, and high-performing online stores.",
+    src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767343566/Shopify_eudc7t.png",  
     color: "bg-orange-500",
     side: "right",
   },
@@ -31,8 +31,8 @@ const services = [
     id: "03",
     title: "Laravel WebApplication",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-    icon: MousePointerClick,
+      "A Laravel-based web application built for performance, security, and scalability. It delivers a clean architecture, robust backend functionality, and seamless user experience for modern web solutions.",
+      src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767354691/laravel-white_pp6xir.png",
     color: "bg-teal-400",
     side: "left",
   },
@@ -40,10 +40,9 @@ const services = [
   {
     id: "04",
     title: "Nextjs WebApplication",
-    shortDescription: "Expert consulting for smart decision-making.",
     description:
-      "Our consulting services provide strategic insights to help businesses innovate, scale, and succeed.",
-    icon: Users,
+      "A Next.js web application built for speed, scalability, and performance, leveraging server-side rendering, static generation, and modern React architecture for an optimal user experience.",
+   src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767355008/Next_mnhyco.png",
     color: "bg-sky-500",
     side: "right",
   },
@@ -52,10 +51,10 @@ const services = [
     id: "05",
     title: "E-commerce",
     slug: "device-solutions",
-    shortDescription: "Smart device and hardware-software solutions.",
+    
     description:
-      "We build and integrate smart device solutions that connect hardware with powerful software systems.",
-    icon: Laptop,
+      "An e-commerce platform that offers a seamless online shopping experience with secure payments, fast delivery, and a wide range of quality products tailored to customer needs.",
+    src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329360/Retail_E-commerce_ydwah8.png",
     color: "bg-blue-700",
     side: "left",
   }
@@ -66,9 +65,9 @@ const services = [
     id: "06",
     title: "Landing Page Desgin",
     slug: "device-solutions",
-    shortDescription: "Smart device and hardware-software solutions.",
+   
     description:
-      "We build and integrate smart device solutions that connect hardware with powerful software systems.",
+      "A visually appealing landing page designed to capture attention, communicate value quickly, and guide users toward a clear call to action. ",
     icon: Laptop,
     color: "bg-sky-700",
     side: "right",

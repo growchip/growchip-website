@@ -2,7 +2,7 @@ import React, { useEffect ,useState  } from 'react'
 import Elite from "@/public/image/png/EliteWeb&Mobile.jpg" 
 import AI from "@/public/image/png/AI.jpg" 
 import Digital from "@/public/image/png/digital.jpg" 
-import Clound from "@/public/image/png/Cloud,.jpg" 
+import Clound from "@/public/image/png/Cloud.jpg" 
 import google from "@/public/image/png/google.jpg" 
 import IIT from "@/public/image/png/iit.webp" 
 import Image from 'next/image';
@@ -14,14 +14,14 @@ const carouselData = [
            title: "Elite Web & Mobile Development",
            desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
            rating: 4.8,
-           src: Elite,
+           src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767335110/EliteWeb_Mobile_i2xnws.jpg",
        },
        {
            id: 2,
            title: "AI-Powered Video & Content Solutions",
            desc: "Captivate audiences with AI-powered videos and digital content that drives engagement and conversions.",
            rating: 4.6,
-           src: AI,
+           src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329348/AI_vko1i9.jpg",
            
        },
        {
@@ -29,14 +29,14 @@ const carouselData = [
            title: "SEO, SMO & Digital Marketing ",
            desc: "Boost visibility, generate leads, and improve conversions with  SEO, SMO, and paid campaigns optimized for Chandigarh and beyond.",
            rating: 5.0,
-           src: Digital
+           src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329350/digital_muis6a.jpg"
        },
        {
            id: 4,
            title: "Google & Meta Ads Expertise",
            desc: "Run targeted Google Ads and Meta Ads campaigns that reach the right audience and deliver measurable results.",
            rating: 4.7,
-            src: google
+            src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329355/google_z1viy6.jpg"
          
        },
        {
@@ -44,12 +44,12 @@ const carouselData = [
            title: "Cloud, DevOps & Enterprise IT",
            desc: "Secure, resilient, and cloud-enabled infrastructure for businesses in Chandigarh, India, and global markets.",
            rating: 4.5,
-           src: Clound
+           src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767335120/Cloud_peer0h.jpg"
        }, {
            id: 6,
            title: "IITians & Big-4 Tech Expertise  ",
            desc: "Our IIT alumni and Big-4 tech veterans deliver unmatched technical expertise, ensuring every project meets global standards and drives growth.",
-            src: IIT
+            src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329354/iit_q4vw47.webp"
            
        },
 ];

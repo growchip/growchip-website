@@ -7,7 +7,7 @@ function HeroSection() {
       <section
         className=" relative min-h-[65vh] sm:min-h-[75vh] lg:min-h-screen flex items-center bg-black "
         style={{
-          backgroundImage: `url(${OurService.src})`,
+          backgroundImage: `url(https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329286/grow_neakc0.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

@@ -2,44 +2,45 @@ import React, { useEffect, useState } from 'react'
 import clientImaage from "@/public/image/ceo.webp"
 import Image from 'next/image';
 import Rating from '../Rating';
+import { ImageError } from 'next/dist/server/image-optimizer';
 
+ const image ="https://res.cloudinary.com/dlb4q6oje/image/upload/v1767335446/user_pumhjc.png"
 const items = [
   {
     id: 1,
-    title: "Rajveer",
-    desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
-    rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    title: "Yuvraj Singh Pawar",
+    desc: "Excellent tech service website—fast, reliable, and easy to use. The team delivers high-quality solutions with great support and clear communication.",
+    rating: 5,
+   
   }, {
     id: 2,
-    title: "Rajveer",
-    desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
-    rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    title: "Arindam Gupta",
+    desc: "A reliable and professional tech service platform that’s easy to navigate. The quality of service and attention to detail are impressive.",
+    rating: 4,
+   
   }, {
     id: 3,
-    title: "Rajveer",
-    desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
-    rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    title: "Vipin Chauhan",
+    desc: "Excellent tech service website offering fast, secure, and efficient solutions. Customer support is helpful and highly knowledgeable.",
+    rating: 3,
+   
   }, {
     id: 4,
-    title: "Rajveer",
-    desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
+    title: "Arjun Singh Rawat",
+    desc: "Great tech service website with a clean design and smooth performance. Support is responsive and solutions are delivered on time.",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    
   }, {
     id: 5,
-    title: "Rajveer",
-    desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
+    title: "Simaran Kaur",
+    desc: "Professional and user-friendly tech service platform. Everything works smoothly and support is always ready to help.",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-  }, {
+  },{
     id: 6,
-    title: "Rajveer",
-    desc: "Build responsive, SEO-optimized websites and apps that scale globally. Trusted by Chandigarh, Indian, and international clients.",
-    rating: 4.8,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    title: "Namita Rawat",
+    desc: "Outstanding tech service website with modern design and fast loading speed. The service quality truly exceeds expectations.",
+    rating: 5,
+    
   },
 
 ];
@@ -76,7 +77,7 @@ function Testimoinal() {
 
                   <div className='flex justify-start gap-5 items-start'>
                     <div>
-                      <Image className='rounded-full w-19 h-19' src={clientImaage.src} alt="clientImage" width="50" height="50" />
+                      <Image className='rounded-full w-19 h-19' src={image} alt="clientImage" width="50" height="50" />
                     </div>
                     <div>
                       <h2>{item.title} </h2>

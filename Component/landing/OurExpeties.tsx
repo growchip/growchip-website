@@ -1,66 +1,55 @@
 import React from 'react'
 import Image from 'next/image'
-import search from "@/public/image/png/Pharmaceuticals .png"
-
-import Real from "@/public/image/png/Real.png"
-import Retail from "@/public/image/png/Retail & E-commerce.png"
-import customerservice from "@/public/image/png/customerservice.png"
-import Manufacturing from "@/public/image/png/Manufacturing.png"
-import Wedding from "@/public/image/png/Wedding.png"
-import Edu from "@/public/image/png/Edu.png"
-import travel from "@/public/image/png/travel.png"
-import Media from "@/public/image/png/Media.png"
-
 
 const cards = [
   {
     id: 1,
-    src:search,
+    src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329355/Pharmaceuticals_so3nod.png",
     title: "Pharmaceuticals ",
     desc: "Digital solutions for patient engagement, hospital management, and pharma operations.",
 
   },
   {
     id: 2,
-    src: Real,
+    src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329360/Real_kg4etj.png",
     title: "Real Estate ",
     desc: "CRM systems, website development, and property marketing solutions.",
 
   },
   {
     id: 3,
-    src: Retail,
+    src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329360/Retail_E-commerce_ydwah8.png",
     title: "Retail & E-commerce",
     desc: "Web development, SEO, SMO, and conversion-focused digital marketing.",
 
   },
   {
     id: 4,
-    src: Manufacturing,
+    src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329354/Manufacturing_s7dvmq.png",
     title: "Manufacturing & Supply Chain",
     desc: "ERP systems, cloud integration, and process optimization tools."
   },
   {
     id: 5,
-    src: Wedding,
+    src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329367/Wedding_bkv50e.png",
     title: "Wedding & Event Management",
     desc: "AI-powered promotions, event websites, and digital marketing campaigns."
   },
 {
     id: 6,
-    src: Edu,
+    src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329347/Edu_dmbgxd.png",
     title: "Education & EdTech",
     desc: "Learning platforms, SEO-optimized websites, and digital engagement tools."
   },
 {
     id: 7,
-    src: travel,
+    src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329360/travel_lzmi9q.png",
     title: "Hospitality & Travel",
     desc: "Booking platforms, web solutions, and targeted marketing campaigns"
   },
   {
     id: 8,
-    src: Media,
+    src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329355/Media_sbblzj.png",
     title: "Media & Entertainment",
     desc: "AI-driven content creation, SEO, and video marketing solutions."
   },

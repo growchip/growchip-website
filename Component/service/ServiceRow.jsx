@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 
 function ServiceRow({ service }) {
   const isRight = service.side === "right";
@@ -44,7 +44,7 @@ function ServiceRow({ service }) {
         `}
       >
         <div className="-rotate-45 text-white">
-          <Icon className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 transition-transform duration-300 hover:scale-125" />
+          <Image src={service.src} alt={service.title} width={400}  height={400} className="w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20 transition-transform duration-300 hover:scale-125" />
         </div>
       </div>
 

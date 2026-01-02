@@ -11,49 +11,22 @@ export default function DigitalMarketing() {
   const services = [
     {
       id: "01",
-      title: "SEO",
+      title: "AI Video Content Creation ",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-      icon: ClipboardList,
+        "AI Content Creation uses advanced artificial intelligence to generate high-quality, engaging, and SEO-friendly content for websites, blogs, and marketing campaigns, saving time while improving consistency and performance.",
+      src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767342936/video_qmd0hm.png",
       color: "bg-red-700",
       side: "left",
     },
     {
       id: "02",
-      title: "Operations",
+      title: "AI Poster Design ",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-      icon: Settings,
+        "AI Poster Design uses smart algorithms and creative design to produce eye-catching posters that attract attention and boost engagement. Perfect for promotions, events, and digital campaigns.",
+      src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767342935/poster_jzccmh.png",
       color: "bg-orange-500",
       side: "right",
-    },
-    {
-      id: "03",
-      title: "Online",
-      description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-      icon: MousePointerClick,
-      color: "bg-teal-400",
-      side: "left",
-    },
-    {
-      id: "04",
-      title: "Consulting",
-      description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-      icon: Users,
-      color: "bg-sky-500",
-      side: "right",
-    },
-    {
-      id: "05",
-      title: "Devices",
-      description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco...",
-      icon: Laptop,
-      color: "bg-blue-700",
-      side: "left",
-    },
+    }
   ];
 
   return (

@@ -17,7 +17,7 @@ function Webdevelopment() {
           title: "Customize ERP And CRM System Development",
           description:
             "Automate, manage, and scale your business efficiently. Custom ERP & CRM development with complete digital marketing solutions.",
-          icon: ClipboardList,
+            src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767355448/ERP_tqi5bg.png",
           color: "bg-red-700",
           side: "left",
         },
@@ -26,7 +26,7 @@ function Webdevelopment() {
           title: "Custom Software / App Development ",
           description:
             "Turn your ideas into powerful digital products. Custom software and app development built to scale.",
-          icon: Settings, 
+          SRC:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329354/Manufacturing_s7dvmq.png", 
           color: "bg-orange-500",
           side: "right",
         },
@@ -35,7 +35,7 @@ function Webdevelopment() {
           title: " Pos  Software Development ",
           description:
             "Simplify billing, inventory, and reporting in one system. Custom POS software designed for speed and accuracy. ",
-          icon: MousePointerClick,
+          src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767356099/pos_uw2h7g.png" ,
           color: "bg-teal-400",
           side: "left",
         },
@@ -44,7 +44,7 @@ function Webdevelopment() {
           title: "Customizing Software Development",
           description:
             "Software built around your business, not the other way around. Fully customized solutions for smarter operations. ",
-          icon: Users,
+            src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767356277/post_c7mxll.png", 
           color: "bg-sky-500",
           side: "right",
         },
@@ -53,7 +53,7 @@ function Webdevelopment() {
           title: " Cousomizing hopitality Software  ",
           description:
             "Smart software solutions tailored for hotels and hospitality businesses. Manage reservations, billing, and guest services with ease.",
-          icon: Laptop,
+          src:"https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329348/Enterprise_uqi96p.png",
           color: "bg-blue-700",
           side: "left",
         },

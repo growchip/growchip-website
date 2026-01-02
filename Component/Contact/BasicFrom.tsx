@@ -53,7 +53,7 @@ function BasicFrom() {
 
             <input
               type="email"
-              name="email"
+              name="email"                                                                        
               placeholder="Your Email"
               value={form.email}
               onChange={handleChange}

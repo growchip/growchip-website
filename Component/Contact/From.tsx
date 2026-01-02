@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Contact from "@/public/image/Contact 2.png";
 import BasicFrom from "./BasicFrom";
 
 export default function ContactPage() {
@@ -13,7 +12,7 @@ export default function ContactPage() {
        <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-20">
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
           <Image
-            src={Contact.src}
+            src="https://res.cloudinary.com/dlb4q6oje/image/upload/v1767329543/Contact_2_i6vyto.png"
             alt="Contact Image"
             width={900}
             height={900}

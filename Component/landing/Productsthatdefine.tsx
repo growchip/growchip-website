@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import laptopImage from "@/public/image/thirdSecitionImage.png"
 import Buttons from '../Buttons'
+ import thrid from "@/public/image/thirdSecitionImage.jpg"
 
 function ThirdSection() {
 
@@ -21,7 +21,7 @@ function ThirdSection() {
                         </h2>
 
                         <p className="  sm:text-lg lg:text-xl mt-6 sm:mt-8 pb-6 leading-relaxed">
-                            Looking to grow your business online? Our Chandigarh-based digital services help local and national businesses stand out. From  responsive  <h2 className=' inline font-bold'>  web development</h2 > and <h2 className='inline font-extrabold'> SEO services to social media optimization (SMO), AI-powered video content creation, and high-converting Google & Meta Ads, </h2> we provide end-to-end solutions designed to boost your online visibility and drive measurable results.  
+                            Looking to grow your business online? Our Chandigarh-based digital services help local and national businesses stand out. From  responsive  <b className=' inline font-bold'>  web development</b> and <b className='inline font-extrabold'> SEO services to social media optimization (SMO), AI-powered video content creation, and high-converting Google & Meta Ads, </b> we provide end-to-end solutions designed to boost your online visibility and drive measurable results.  
                             <br /> 
                            </p> 
                         <Buttons text="Explore" link="#" />
@@ -30,11 +30,11 @@ function ThirdSection() {
                     {/* Image */}
                     <div className="w-full lg:w-[50%] flex justify-center">
                         <Image
-                            src={laptopImage.src}
+                            src={thrid.src}
                             alt="laptopImage"
                             width={800}
                             height={500}
-                            className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto"
+                            className="w-full max-w-md rounded-2xl shadow-2xl shadow-gray-500 sm:max-w-lg lg:max-w-xl h-auto"
                             priority
                         />
                     </div>

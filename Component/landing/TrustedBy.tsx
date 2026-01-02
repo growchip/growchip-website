@@ -18,38 +18,38 @@ export const carouselData = [
     {
         id: 1,
         title: "New Tittle",
-        src: Bio6.src,
+        src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767330849/BNYMellon_j5jwkm.png",
     }, 
     {
         id: 2,
         title: "New Tittle",
-       src: Bio5.src,
+       src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767330849/amazon_mnuvou.png",
     },
     {
         id: 3,
         title: "New Tittle",
-        src: Bio4.src,
+        src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767330856/windlas_hcevua.png",
     },
    
     {
         id: 5,
         title: "New Tittle",
-        src: Bio.src,
+        src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767330848/Bio_qh4xjm.png",
     },
      {
         id: 6,
         title: "New Tittle",
-       src: Bio3.src,
+       src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767330856/Zoicilfe_wpzuge.png",
     },
     {
         id: 7,
         title: "New Tittle",
-       src: Bio2.src,
+       src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767330849/Rechelist_o0ctnn.png",
     },
      {
         id: 8,
         title: "New Tittle",
-       src: Bio7.src,
+       src: "https://res.cloudinary.com/dlb4q6oje/image/upload/v1767330855/vellmine_euaeiy.jpg",
     },
     ]
 

@@ -166,7 +166,7 @@
               overflow-hidden
             "
             style={{
-              backgroundImage: WhyChooseUse.src,
+             
               borderTopLeftRadius: "20%",
               borderBottomRightRadius: "20%",
               boxShadow: "8px -8px 20px green",
