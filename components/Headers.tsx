@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import Buttons from "@/Component/Buttons";
+import Buttons from "@/components/Buttons";
 
 import Logo from "@/public/logo/logo.jpg";
 import { label } from "framer-motion/client";

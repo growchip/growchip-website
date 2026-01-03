@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { apolloClient } from "@/lib/apolloClient";
 import { BLOG_BY_SLUG } from "@/lib/queries";
-import RelatedBlogs from "@/Component/blog/RelatedBlogs";
-import BasicFrom from "@/Component/contact/BasicFrom";
+import RelatedBlogs from "@/components/blog/RelatedBlogs";
+import BasicFrom from "@/components/Contact/BasicFrom";
 
 import { RichText } from "@graphcms/rich-text-react-renderer";
 

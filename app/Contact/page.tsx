@@ -1,8 +1,8 @@
 "use Client"
 
-import From from '@/Component/contact/From'
-import HeroSection from '@/Component/contact/HeroSection'
-import OurStack from '@/Component/service/OurStack'
+import From from '@/components/Contact/From'
+import HeroSection from '@/components/Contact/HeroSection'
+import OurStack from '@/components/Service/OurStack'
 import { Metadata } from 'next';
 import React from 'react'
 

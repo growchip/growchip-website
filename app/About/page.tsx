@@ -1,10 +1,10 @@
 import React from 'react'
-import StatsCard from '@/Component/about/StatsCard'
-import HeroSection from '@/Component/about/HeroSection'
-import MeetOurTEAM from '@/Component/about/MeetOurTEAM'
-import WhyChoseUs from '@/Component/about/WhyChoseUs'
+import StatsCard from '@/components/About/StatsCard'
+import HeroSection from '@/components/About/HeroSection'
+import MeetOurTEAM from '@/components/About/MeetOurTEAM'
+import WhyChoseUs from '@/components/About/WhyChoseUs'
 
-import Values  from "@/Component/about/values"
+import Values  from "@/components/About/values"
 import { Metadata } from 'next'
 
 export const metadata: Metadata ={
