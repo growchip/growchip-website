@@ -1,17 +1,17 @@
 
 "use client";
-import WhatWeOffer from '@/Component/landing/WhatWeOffer';
-import HeroSectionpage from '../Component/landing/HeroSection'
-import ThirdSection from "@/Component/landing/Productsthatdefine"
-import UpCommingSection from '@/Component/landing/DrivingGrowth';
-import Testimoinal from '@/Component/landing/WhatAreClient';
+import WhatWeOffer from '@/components/landing/WhatWeOffer';
+import HeroSectionpage from '../components/landing/HeroSection'
+import ThirdSection from "@/components/landing/Productsthatdefine"
+import UpCommingSection from '@/components/landing/DrivingGrowth';
+import Testimoinal from '@/components/landing/WhatAreClient';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import OurProcess from '@/Component/landing/OurExpeties';
-import FAQsection from '@/Component/landing/FAQsection';
-import Aipowered from '@/Component/landing/Aipowered';
+import OurProcess from '@/components/landing/OurExpeties';
+import FAQsection from '@/components/landing/FAQsection';
+import Aipowered from '@/components/landing/Aipowered';
 
-import PartnerLogocarousle from '@/Component/landing/TrustedBy';
-import BarComponent from '@/Component/landing/LocationWeServe'
+import PartnerLogocarousle from '@/components/landing/TrustedBy';
+import BarComponent from '@/components/landing/LocationWeServe'
 
 
 
